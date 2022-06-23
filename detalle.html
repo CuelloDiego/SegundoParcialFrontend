@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tablacss.css">
+
+    <title>Tabla AJAX</title>
+</head>
+
+<body>
+    <p>Ingrese el id del personaje que desea conocer</p>
+    <br>
+    <div id="personaje">
+        <label>Personaje</label>
+        <input type="text" id="idInput">
+        <button onclick=VerifInput()>Buscar personaje</button>
+    </div>
+    <div id="Errorinput"></div>
+    <table class="container">
+        <thead>
+            <tr>
+                <th>
+                    <h1>name</h1>
+                </th>
+                <th>
+                    <h1>status</h1>
+                </th>
+                <th>
+                    <h1> species </h1>
+                </th>
+                <th>
+                    <h1> type </h1>
+                </th>
+                <th>
+                    <h1> gender </h1>
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="name"></td>
+                <td id="status"></td>
+                <td id="species"></td>
+                <td id="type"></td>
+                <td id="gender"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<SCript src="tabla.js"></SCript>
+
+</html>
